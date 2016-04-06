@@ -1,0 +1,29 @@
+---
+server:
+    install: '1'
+    packages: [vim, git, htop, imagemagick]
+    timezone: America/Sao_Paulo
+    locale: en_US.UTF-8
+vagrant_local:
+    install: '1'
+    vm: { base_box: trusty64, hostname: framework, ip: 192.168.0.244, memory: '1024', sharedfolder: ./, syncType: '0' }
+apache:
+    install: '1'
+    docroot: /vagrant/project
+    servername: framwork.dev
+mysql:
+    install: '1'
+    root_password: root
+    database: framework
+    user: framework
+    password: framework
+    dump: ''
+php:
+    install: '1'
+    ppa: php5-5.6
+    packages: [php5-cli, php5-intl, php5-mcrypt, php-pear, php5-curl, php5-cgi, php5-common, php5-imagick, php5-fpm, php5-gd, php5-mbstring, php5-mysql]
+xdebug:
+    install: '1'
+composer:
+    install: '1'
+
