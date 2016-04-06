@@ -7,7 +7,7 @@
 	 * @author   Leandro Sanches <leandro.sanches@efuzyon.com>
 	 */
 
-	ini_set("display_errors", "off");
+	#ini_set("display_errors", "on");
 	$de = ini_get("display_errors");
 
 	use Symfony\Component\Debug\Debug;
@@ -18,8 +18,6 @@
 		Debug::enable();
 	else:
 		ErrorHandler::register()->setExceptionHandler(function($e){
-			include __DIR__ . "/../views/error/500.tpl";
+			include __DIR__ . "/../app/views/error/500.tpl";
 		});
 	endif;
-
-	include 123;
