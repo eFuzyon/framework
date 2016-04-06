@@ -1,0 +1,16 @@
+{
+    "name": "efuzyon/framework",
+    "description": "eFuzyon Framework",
+    "authors": [
+        {
+            "name": "Leandro Sanches",
+            "email": "leandro.sanches@efuzyon.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^3.0",
+        "symfony/debug": "^3.0",
+        "symfony/routing": "^3.0",
+        "efuzyon/efuzyon-project": "dev-master"
+    }
+}
