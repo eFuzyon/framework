@@ -13,7 +13,7 @@
 	|---------------------------------------------------------
 	*/
 	require __DIR__ . "/../vendor/autoload.php";
-
+ 
 	/*
 	ini_set("display_errors", "off");
 	$de = ini_get("display_errors");
