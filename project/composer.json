@@ -11,6 +11,7 @@
         "symfony/console": "^3.0",
         "symfony/debug": "^3.0",
         "symfony/routing": "^3.0",
-        "efuzyon/efuzyon-project": "dev-master"
+        "efuzyon/efuzyon-project": "dev-master",
+        "symfony/http-foundation": "^3.0"
     }
 }
