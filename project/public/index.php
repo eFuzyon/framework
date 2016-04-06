@@ -14,6 +14,7 @@
 	*/
 	require __DIR__ . "/../vendor/autoload.php";
 
+	/*
 	ini_set("display_errors", "off");
 	$de = ini_get("display_errors");
 
@@ -30,5 +31,4 @@
 			include __DIR__ . "/../views/error/500.tpl";
 		});
 	endif;
-	
-	include 123;
+	*/
