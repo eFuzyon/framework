@@ -1,10 +1,10 @@
 debug: false
 
 project:
-	url: "framework.dev"
+    url: "framework.dev"
 
 database:
-	teste: OK
+    teste: OK
 
 chupisco:
-	teste: OK
+    teste: OK

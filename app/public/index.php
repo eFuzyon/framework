@@ -14,7 +14,7 @@
 	*/
 	define("BASE_PATH_APP", dirname(__DIR__) . '/');
 	define("BASE_PATH", dirname(BASE_PATH_APP) . '/');
-	define("BASE_PATH_SYS", BASE_PATH . 'system/');
+	define("BASE_PATH_SYS", BASE_PATH . 'core/');
 
 	/*
 	|---------------------------------------------------------
