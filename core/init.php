@@ -8,15 +8,21 @@
 	 */
 
 	/**
-	* Parse the environment.yml file
+	* Parse: messages.yml
 	*/
-	if (file_exists(BASE_PATH . 'environment.yml')) :
+	Core\Yaml::LoadMessages(BASE_PATH_SYS . '/config/messages.yml');
 
-		Core\Yaml::Parse(BASE_PATH . 'environment.yml');
-
-	endif;
+	/**
+	* Parse: environment.yml
+	*/
+	Core\Yaml::LoadEnvironment(BASE_PATH . 'environment.yml');
 
 	/**
 	* Initiate the debug process
 	*/
 	Core\Debug::Init();
+
+	/**
+	* Initiate the debug process
+	*/
+	Core\Route::Init();
