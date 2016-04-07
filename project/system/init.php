@@ -7,7 +7,7 @@
 	 * @author   Leandro Sanches <leandro.sanches@efuzyon.com>
 	 */
 
-	#ini_set("display_errors", "on");
+	ini_set("display_errors", "on");
 	$de = ini_get("display_errors");
 
 	use Symfony\Component\Debug\Debug;
@@ -21,3 +21,5 @@
 			include __DIR__ . "/../app/views/error/500.tpl";
 		});
 	endif;
+
+	include 123;
