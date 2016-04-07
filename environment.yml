@@ -1,0 +1,10 @@
+debug: false
+
+project:
+	url: "framework.dev"
+
+database:
+	teste: OK
+
+chupisco:
+	teste: OK

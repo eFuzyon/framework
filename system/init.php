@@ -7,12 +7,20 @@
 	 * @author   Leandro Sanches <leandro.sanches@efuzyon.com>
 	 */
 
-	ini_set("display_errors", "on");
-	$de = ini_get("display_errors");
-
 	use Symfony\Component\Debug\Debug;
 	use Symfony\Component\Debug\ExceptionHandler;
 	use Symfony\Component\Debug\ErrorHandler;
+	use Symfony\Component\Yaml\Parser;
+
+echo 123;
+	exit;
+
+	/**
+	* Let's parse the environment.yml file
+	*/
+	#if (file_exists()) :
+	$yaml = new Parser();
+	$value = $yaml->parse(file_get_contents('/path/to/file.yml'));
 	
 	if ($de == "on") :
 		Debug::enable();

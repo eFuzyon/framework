@@ -9,14 +9,23 @@
 
 	/*
 	|---------------------------------------------------------
+	| Set base paths
+	|---------------------------------------------------------
+	*/
+	define("BASE_PATH_APP", dirname(__DIR__) . '/');
+	define("BASE_PATH", dirname(BASE_PATH_APP) . '/');
+	define("BASE_PATH_SYS", BASE_PATH . 'system/');
+
+	/*
+	|---------------------------------------------------------
 	| Auto Loader
 	|---------------------------------------------------------
 	*/
-	require __DIR__ . "/../../vendor/autoload.php";
+	require BASE_PATH . "vendor/autoload.php";
 
 	/*
 	|---------------------------------------------------------
 	| APP
 	|---------------------------------------------------------
 	*/
-	require __DIR__ . "/../../system/init.php";
+	require BASE_PATH_SYS . "init.php";
