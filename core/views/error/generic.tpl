@@ -66,7 +66,7 @@
 </head>
 <body>
 	<div id="sf-resetcontent" class="sf-reset">
-		<h1>Whoops, looks like something went wrong.</h1>
+		<h1>{{error-message}}</h1>
 	</div>
 </body>
 </html>
