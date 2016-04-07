@@ -1,4 +1,4 @@
 .vagrant/
 vagrant/.vagrant/
 vendor/
-.lock
+composer.lock
