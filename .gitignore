@@ -1,2 +1,4 @@
-project/vendor/
 .vagrant/
+vagrant/.vagrant/
+vendor/
+composer.lock
