@@ -23,6 +23,6 @@
 	Core\Debug::Init();
 
 	/**
-	* Initiate the debug process
+	* Find a route for the request
 	*/
 	Core\Route::Init();
