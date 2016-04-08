@@ -15,7 +15,7 @@
 			* Parse: app/config/routes.yml
 			*/
 			$router = Yaml::LoadRouter(BASE_PATH_APP . 'config/routes.yml');
-			if ($router) $match = $router->match('/');
+			if ($router) $match = $router->match('/foo/bar');
 
 		}
 
