@@ -3,6 +3,10 @@
 	namespace Core;
 
 	use Symfony\Component\Yaml\Parser;
+	use Symfony\Component\Config\FileLocator;
+	use Symfony\Component\Routing\Loader\YamlFileLoader;
+	use Symfony\Component\Routing\RequestContext;
+	use Symfony\Component\Routing\Router as SymfonyRouter;
 
 	class Yaml 
 	{
@@ -59,6 +63,29 @@
 				Debug::Call("generic", [
 					"error-message" => "The following file is missing: {$file}"
 				]);
+
+			endif;
+
+		}
+
+		public static function LoadRouter($file = null){
+
+			if ($file) :
+
+				# Objects
+				$locator = new FileLocator(array(__DIR__));
+				$requestContext = new RequestContext('/');
+
+				# Set router
+				$router = new SymfonyRouter(
+				    new YamlFileLoader($locator),
+				    $file,
+				    array(),
+				    $requestContext
+				);
+
+				# Output
+				return $router;
 
 			endif;
 
