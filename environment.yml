@@ -1,8 +1,5 @@
 debug: true
 
-project:
-    url: "framework.dev"
-
 database:
     teste: OK
 
