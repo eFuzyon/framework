@@ -1,7 +1,7 @@
-route1:
-    path:     /foo
-    defaults: { _controller: 'MyController', _action: 'fooAction' }
+home:
+    path:     /
+    defaults: { _controller: 'HomeController', _action: 'indexAction' }
 
-route2:
-    path:     /foo/bar
-    defaults: { _controller: 'MyController', _action: 'fooBarAction' }
+blog:
+    path:     /blog
+    defaults: { _controller: 'BlogController', _action: 'indexAction' }
