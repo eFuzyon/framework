@@ -22,7 +22,7 @@
 			else:
 
 				# Set new configuration
-				#ini_set("display_errors", "off");
+				ini_set("display_errors", "off");
 
 				# Handle error
 				ErrorHandler::register()->setExceptionHandler(function($e){
