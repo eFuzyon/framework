@@ -1,7 +1,17 @@
 home:
     path:     /
-    defaults: { _controller: 'HomeController', _action: 'indexAction' }
+    defaults: 
+        _controller: 'HomeController'
+        _action: 'indexAction'
 
 blog:
     path:     /blog
-    defaults: { _controller: 'BlogController', _action: 'indexAction' }
+    defaults: 
+        _controller: 'HomeController'
+        _action: 'indexAction'
+
+blog_post:
+    path:     /blog/{id}
+    defaults: 
+        _controller: 'HomeController'
+        _action: 'detailAction'
