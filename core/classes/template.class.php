@@ -59,4 +59,22 @@
 
 		}
 
+		public static function Call($template = null, $replace = null) {
+
+			# Does the template exists?
+			if (file_exists(BASE_PATH_APP . "view/{$template}.tpl")) :
+
+				# Create a cache for the content
+				ob_start();
+				include BASE_PATH_APP . "view/{$template}.tpl";
+				$content = ob_get_contents();
+				ob_end_clean();
+
+				# Output
+				if ($content) echo $content;
+
+			endif;
+
+		}
+
 	}
