@@ -7,9 +7,6 @@
 	class User extends Db
 	{
 
-		var $context;
-		var $request;
-
 		function __construct(){}
 
 	}
