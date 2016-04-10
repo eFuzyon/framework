@@ -1,7 +1,8 @@
 debug: true
 
 database:
-    teste: OK
-
-chupisco:
-    teste: OK
+    mysql: 
+        host: 'localhost'
+        username: 'root'
+        password: 'root'
+        dbname: 'server-main'

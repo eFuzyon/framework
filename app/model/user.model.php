@@ -7,6 +7,6 @@
 	class User extends Db
 	{
 
-		var $table = "user";
+		public static $table = "user";
 
 	}
