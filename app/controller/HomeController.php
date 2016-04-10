@@ -3,6 +3,7 @@
 	namespace App\Controller;
 
 	use Core\Debug;
+	use Core\Template;
 
 	class HomeController 
 	{
@@ -12,10 +13,8 @@
 			# Globals
 			global $appObj;
 
-			# Call debug
-			Debug::Call("generic", [
-				"error-message" => "Waiting for controller"
-			]);
+			# View
+			Template::Call("index");
 
 		}
 
