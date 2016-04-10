@@ -14,6 +14,11 @@
 			# Globals
 			global $appObj;
 
+			# Fetch user
+			$users = User::Find([
+				"id" => 1
+			]);
+
 			# View
 			Template::Call("index");
 

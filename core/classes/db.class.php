@@ -5,6 +5,14 @@
 	class Db 
 	{
 
-		function __construct(){}
+		public static function find($values=null){
+
+			if ($values) :
+
+				// ...
+
+			endif;
+
+		}
 
 	}

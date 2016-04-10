@@ -7,6 +7,6 @@
 	class User extends Db
 	{
 
-		function __construct(){}
+		var $table = "user";
 
 	}
