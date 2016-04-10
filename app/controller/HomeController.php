@@ -4,6 +4,7 @@
 
 	use Core\Debug;
 	use Core\Template;
+	use App\Model\User;
 
 	class HomeController 
 	{
